@@ -1,0 +1,227 @@
+/* CSS Reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    /* background-color: black;
+    z-index: 1;
+    opacity: .99; */
+}
+
+/* CSS Variable */
+:root{
+    --navbar-height:59px;
+}
+
+/* Navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+
+    /* justify-content: space-around; */
+
+}
+/* Navigation Bar: Logo and Image */
+#logo{
+  margin: 10px 34px;
+}
+#logo img{
+    width: 115px;
+    height: 109px;
+    margin: -7px 30px;
+    border-radius: 302px;
+
+}
+
+/* naigation Bar : list Styling */
+
+
+#navbar ul{
+    display: flex;
+
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .9;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    /* margin: 12px; */
+}
+#navbar ul li a{
+  display: block;
+  padding:3px 22px;
+  border-radius: 20px;
+  text-decoration:none ;
+  color: beige;
+
+}
+#navbar ul li a:hover{
+  color: white;
+  /* background-color: beige; */
+  border-bottom: 2px solid white;
+  transform: translateY(-8px);
+
+}
+/* HOme section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px ;
+    height: 438px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background:url('back.jpg') no-repeat center center/cover ;
+    position: absolute;
+    height: 73.5%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: .9;
+}
+#home h1{
+    color: white;
+    border-bottom: 2px solid whitesmoke;
+    opacity: 1;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5 rem;
+
+}
+/* services center */
+#services{
+margin: 34px;
+display: flex;
+
+}
+#services .box{
+    border: 2px solid red;
+    margin: 3px 6px;
+    border-radius: 22px;
+    background-color: rgb(249, 245, 239);
+}
+#services .box img{
+    height: 100px;
+    display: block;
+    margin: auto;
+    
+
+}
+#services .box h2{
+    text-align: center;
+}
+
+.h-primarycenter{
+    color: black;
+    text-align: center;
+    font-size: 2.5rem;
+
+    
+}
+ 
+/* client section */
+#client-section{
+    height: 344px;
+    position: relative;
+}
+#client-section{
+   content: "";
+   position: absolute;
+   background: url('b3.jpg') no-repeat center center/cover;
+   width: 100%;
+   height: 54%;
+   z-index: -1;
+   opacity: .9;
+
+}
+#client{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#client img{
+height: 124px;
+
+
+}
+.client-item{
+    padding: 34px;
+}
+
+
+
+/* Utility Classes */
+.h-primary{
+    font-size: 3.3rem;
+    padding: 12px;
+    font-family: 'Poppins', sans-serif;
+}
+.h-Secondary{
+    font-size: 3.3rem;
+    padding: 12x;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn {
+padding: 6px 20px;
+border: 2px solid white;
+background-color: rgb(12, 12, 40);
+color: white;
+margin: 17px;
+font-size: 1.5rem;
+border-radius: 10px;
+cursor: pointer;
+}
+.btn:hover{
+    color: black;
+    background-color:beige ;
+    transform: scale(1.2);
+}
+.center{
+    /* display: flex; */
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+/* contact section */
+#contact{
+    /* display: flex; */
+    margin-top: 435px;
+    position: relative;
+    /* flex-direction: column; */
+
+}
+.contact-box{
+    display: block;
+    text-align: center;
+    flex-direction: column;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url('b2.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 150%;
+    z-index: -1;
+    opacity: .7;
+ 
+}
+
+/* .form-group li{
+    display: block;
+} */
